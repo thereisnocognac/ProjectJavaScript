@@ -25,15 +25,8 @@
 
 // anotherArr([1,2,3,4]);
 
-function yetAnotherArr(z) {
-    let allEven = [];
-    let pullItOut;
+let arr = ['t','e','s','t'];
 
-    for(let i = 0; i < z.length; i++) {
-        if((z[i] % 2) === 0) {
-            allEven.push(z[i]);
-        }
-    }
-}
+alert ( arr.splice(1, 3) );
 
-yetAnotherArr([1,2,3,4,5])
+alert (arr)
