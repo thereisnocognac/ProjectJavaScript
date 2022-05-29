@@ -27,6 +27,14 @@
 
 let arr = ['t','e','s','t'];
 
-alert ( arr.splice(1, 3) );
+alert ( arr.concat(1, 3, [4, 5]) );
 
 alert (arr)
+
+arr.forEach((item, index, array) => {
+    alert(`${item} is at index ${index} in the ${array}`);
+});
+
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+    alert(`${item} is at index ${index} in ${array}`);
+  });
