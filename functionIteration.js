@@ -21,20 +21,83 @@
 //     y.forEach((element, i) => {
 //         product *= item
 //     });
-// }
+// 
 
 // anotherArr([1,2,3,4]);
 
-let arr = ['t','e','s','t'];
 
-alert ( arr.concat(1, 3, [4, 5]) );
 
-alert (arr)
+///////////////////////////////METHODS////////////////////
 
-arr.forEach((item, index, array) => {
-    alert(`${item} is at index ${index} in the ${array}`);
-});
+// let arr = ['t','e','s','t'];
 
-["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
-    alert(`${item} is at index ${index} in ${array}`);
-  });
+// alert ( arr.concat(1, 3, [4, 5]) );
+
+// alert (arr)
+
+// arr.forEach((item, index, array) => {
+//     alert(`${item} is at index ${index} in the ${array}`);
+// });
+
+// ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+//     alert(`${item} is at index ${index} in ${array}`);
+//   });
+
+///////////////////////////////METHODS////////////////////
+
+
+
+
+///////////////////////////////ARROWS////////////////////
+
+// let myFun = (a, b, ...muchMore) => {
+//     alert (a + ' ' + b + ' ' + muchMore);
+// }
+
+// myFun('there', 'is');
+
+// myFun('There', 'is', 'no', 'spoon.');
+
+
+
+
+
+
+///////////////////////////////METHODS////////////////////
+
+
+function XO(xsandos) {
+  let lettersInside;
+  let howManyXs;
+  let howManyOs;
+  
+  howManyXs = 0;
+  howManyOs = 0;
+  lettersInside = [...xsandos];
+  
+  for (let i = 0; i <= lettersInside.length - 1; i++) {
+    if (lettersInside[i] === 'x') {
+      howManyXs += 1;
+    }else if(lettersInside[i] === 'o') {
+      howManyOs += 1;
+    }
+  }
+  
+  if(howManyXs === howManyOs) {
+    return true;
+  }else if(howManyXs === 0 && howManyOs === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+
+let isItAnArray;
+let isItAnArrayNow;
+
+isItAnArray = 'There is no spoon';
+
+isItAnArrayNow = [...isItAnArray];
+
+
