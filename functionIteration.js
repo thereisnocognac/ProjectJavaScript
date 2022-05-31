@@ -66,38 +66,62 @@
 ///////////////////////////////METHODS////////////////////
 
 
-function XO(xsandos) {
-  let lettersInside;
-  let howManyXs;
-  let howManyOs;
+// function XO(xsandos) {
+//   let lettersInside;
+//   let howManyXs;
+//   let howManyOs;
   
-  howManyXs = 0;
-  howManyOs = 0;
-  lettersInside = [...xsandos];
+//   howManyXs = 0;
+//   howManyOs = 0;
+//   lettersInside = [...xsandos];
   
-  for (let i = 0; i <= lettersInside.length - 1; i++) {
-    if (lettersInside[i] === 'x') {
-      howManyXs += 1;
-    }else if(lettersInside[i] === 'o') {
-      howManyOs += 1;
-    }
-  }
+//   for (let i = 0; i <= lettersInside.length - 1; i++) {
+//     if (lettersInside[i] === 'x') {
+//       howManyXs += 1;
+//     }else if(lettersInside[i] === 'o') {
+//       howManyOs += 1;
+//     }
+//   }
   
-  if(howManyXs === howManyOs) {
-    return true;
-  }else if(howManyXs === 0 && howManyOs === 0){
-    return true;
-  }else{
-    return false;
-  }
+//   if(howManyXs === howManyOs) {
+//     return true;
+//   }else if(howManyXs === 0 && howManyOs === 0){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+
+// let isItAnArray;
+// let isItAnArrayNow;
+
+// isItAnArray = 'There is no spoon';
+
+// isItAnArrayNow = [...isItAnArray];
+
+
+///////////////////////////////METHODS////////////////////
+
+
+let tvShows;
+
+tvShows = [1,2,3];
+
+for(i = 0; i <= tvShows.length; i++) {
+  console.log(tvShows[i]);
 }
 
+let allNumbers;
+let newArray;
 
-let isItAnArray;
-let isItAnArrayNow;
+allNumbers = [1,2,3,4,5,6,7,8,9,10];
 
-isItAnArray = 'There is no spoon';
-
-isItAnArrayNow = [...isItAnArray];
+for(i = 0; i <= allNumbers.length; i++) {
+  if(allNumbers[i] % 2 === 0) {
+    newArray.push(allNumbers[i])
+    console.log(newArray)
+  }
+}
 
 
